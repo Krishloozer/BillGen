@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AddBills">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ghee"
+        android:id="@+id/cbxGhee"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp"
+        android:checked="false"
+        android:textSize="40sp"
+        android:layout_marginLeft="15dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Butter"
+        android:id="@+id/cbxButter"
+        android:layout_alignBottom="@+id/cbxGhee"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:checked="false"
+        android:textSize="40sp"
+        android:layout_marginRight="15dp"/>
+
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:id="@+id/edtxtGhee"
+        android:background="@drawable/edit_text_style"
+        android:hint="Disabled"
+        android:layout_alignTop="@+id/edtxtButter"
+        android:enabled="false"
+        android:numeric="decimal"
+        android:layout_alignRight="@+id/cbxGhee"
+        android:layout_alignEnd="@+id/cbxGhee"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:id="@+id/edtxtButter"
+        android:background="@drawable/edit_text_style"
+        android:hint="Disabled"
+        android:layout_below="@+id/cbxButter"
+        android:layout_marginTop="87dp"
+        android:enabled="false"
+        android:numeric="decimal"
+        android:layout_alignRight="@+id/cbxButter"
+        android:layout_alignEnd="@+id/cbxButter"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_alignLeft="@+id/cbxButter"
+        android:layout_alignStart="@+id/cbxButter" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Quantity"
+        android:id="@+id/textView"
+        android:layout_above="@+id/edtxtGhee"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="25sp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Total cost :"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/edtxtGhee"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="72dp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0.0"
+        android:id="@+id/txtCost"
+        android:textSize="30sp"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/btnAddBill"
+        android:layout_toEndOf="@+id/btnAddBill" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Rs."
+        android:id="@+id/textView3"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:textSize="30sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Bill"
+        android:id="@+id/btnAddBill"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp" />
+
+</RelativeLayout>

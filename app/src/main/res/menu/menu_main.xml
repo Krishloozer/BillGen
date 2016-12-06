@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="loozer.billgen.MainActivity">
+
+    <item
+        android:id="@+id/action_add_bills"
+        android:orderInCategory="100"
+        android:title="@string/action_add_bills"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_getReports"
+        android:orderInCategory="100"
+        android:title="@string/action_getReports"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>

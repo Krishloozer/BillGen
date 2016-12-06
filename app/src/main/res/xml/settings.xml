@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Set Product Rate">
+        <EditTextPreference
+            	android:title="Ghee Rate"
+            	android:summary=" "
+            	android:key="prefGheeRate"
+                android:inputType="numberDecimal"/>
+
+        <EditTextPreference
+                android:title="Butter Rate"
+                android:summary=" "
+                android:key="prefButterRate"
+                android:inputType="numberDecimal"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

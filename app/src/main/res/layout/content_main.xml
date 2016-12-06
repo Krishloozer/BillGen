@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="loozer.billgen.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:id="@+id/container">
+
+    <include layout="@layout/content_new"/>
+
+    <!--RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup"
+        android:layout_below="@+id/lblHeading"
+        android:layout_centerHorizontal="true">
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ghee"
+            android:id="@+id/rbtnGhee"
+            android:checked="true"
+            android:layout_marginRight="@dimen/abc_action_button_min_height_material" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Butter"
+            android:id="@+id/rbtnButter"
+            android:checked="false"
+            android:layout_marginLeft="@dimen/abc_action_button_min_height_material" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECT AN ITEM"
+        android:id="@+id/lblHeading"
+        android:textSize="@dimen/abc_dialog_padding_top_material"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerQty"
+        android:layout_marginTop="75dp"
+        android:spinnerMode="dialog"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_toLeftOf="@+id/lblButterRs"
+        android:layout_toStartOf="@+id/lblButterRs" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Cost:"
+        android:id="@+id/lblTotalCost"
+        android:layout_marginTop="50dp"
+        android:textSize="@dimen/abc_dialog_padding_top_material"
+        android:layout_below="@+id/spinnerQty"
+        android:layout_alignLeft="@+id/lblHeading"
+        android:layout_alignStart="@+id/lblHeading" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MAKE BILL"
+        android:id="@+id/btnMakeBill"
+        android:layout_marginTop="79dp"
+        android:layout_below="@+id/lblTotalCost"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="temp"
+        android:id="@+id/lblGheeRs"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_toLeftOf="@+id/lblHeading"
+        android:layout_toStartOf="@+id/lblHeading" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="temp"
+        android:id="@+id/lblButterRs"
+        android:layout_alignTop="@+id/lblGheeRs"
+        android:layout_toRightOf="@+id/lblHeading"
+        android:layout_toEndOf="@+id/lblHeading" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="temp"
+        android:id="@+id/lblCalCost"
+        android:layout_above="@+id/lblTotalCost"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_marginBottom="@dimen/abc_dialog_padding_top_material" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0.0"
+        android:id="@+id/lblTotalCostDisp"
+        android:textAlignment="textStart"
+        android:layout_alignBottom="@+id/lblTotalCost"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rs."
+        android:id="@+id/textView"
+        android:layout_above="@+id/btnMakeBill"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs."
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/lblGheeRs"
+        android:layout_toLeftOf="@+id/lblGheeRs"
+        android:layout_toStartOf="@+id/lblGheeRs" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs."
+        android:id="@+id/textView3"
+        android:layout_alignBottom="@+id/lblButterRs"
+        android:layout_toLeftOf="@+id/lblButterRs"
+        android:layout_toStartOf="@+id/lblButterRs" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/kg"
+        android:id="@+id/textView4"
+        android:layout_alignBottom="@+id/lblGheeRs"
+        android:layout_toRightOf="@+id/lblGheeRs"
+        android:layout_toEndOf="@+id/lblGheeRs" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/kg"
+        android:id="@+id/textView5"
+        android:layout_alignBottom="@+id/lblButterRs"
+        android:layout_toRightOf="@+id/lblButterRs"
+        android:layout_toEndOf="@+id/lblButterRs" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Qty : "
+        android:id="@+id/textView6"
+        android:layout_alignTop="@+id/lblCalCost"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/abc_action_bar_subtitle_bottom_margin_material" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Rs."
+        android:id="@+id/textView7"
+        android:layout_alignTop="@+id/lblCalCost"
+        android:layout_alignRight="@+id/lblButterRs"
+        android:layout_alignEnd="@+id/lblButterRs" /-->
+
+</RelativeLayout>

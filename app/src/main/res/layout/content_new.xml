@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <android.support.v7.widget.CardView
+            android:id="@+id/gheeCard"
+            android:layout_width="175dp"
+            android:layout_height="240dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+            <include layout="@layout/ghee_view"/>
+        </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/butterCard"
+        android:layout_width="175dp"
+        android:layout_height="240dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+        <include layout="@layout/butter_view"/>
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gheeCard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:elevation="4dp">
+        <android.support.v7.widget.CardView
+            android:id="@+id/printCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <include layout="@layout/total_view"/>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

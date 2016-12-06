@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total Cost :"
+        android:id="@+id/txtTotalCost"
+        android:textSize="@dimen/abc_dialog_padding_material"
+        android:layout_marginTop="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/txtRs"
+        android:layout_toStartOf="@+id/txtRs" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rs."
+        android:id="@+id/txtRs"
+        android:textSize="@dimen/abc_dialog_padding_material"
+        android:layout_alignTop="@+id/txtTotalCost"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PrintBill"
+        android:id="@+id/btnPrintBill"
+        android:layout_marginTop="71dp"
+        android:layout_below="@+id/txtTotalCost"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0.00"
+        android:id="@+id/payTotal"
+        android:layout_above="@+id/btnPrintBill"
+        android:layout_toRightOf="@+id/txtRs"
+        android:layout_toEndOf="@+id/txtRs" />
+
+</RelativeLayout>

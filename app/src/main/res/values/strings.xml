@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">BillGen</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_getReports">Get Reports</string>
+    <string name="action_add_bills">Add Bills</string>
+
+    <array name="spinnerItems">
+        <item>250 Gram</item>
+        <item>500 Gram</item>
+        <item>1 KG</item>
+        <item>2 KG</item>
+        <item>3 KG</item>
+        <item>4 KG</item>
+        <item>5 KG</item>
+    </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
